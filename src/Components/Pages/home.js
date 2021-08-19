@@ -9,7 +9,7 @@ const Home = (props) => {
         let scopes = `playlist-modify-private playlist-modify-public`;
         let redirect_url = `https://gg-final-project.vercel.app/redirect`;
         let spotifyUrl = `https:/accounts.spotify.com/authorize?client_id=${client_id}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirect_url)}&response_type=token&show_dialog=true`;
-        window.open(spotifyUrl, "_self");
+        window.open(spotifyUrl);
     }
 
     return (
