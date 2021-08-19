@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  border: 20px solid #969696;
+  margin: 10px;
+  padding: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  width:100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+#t01 tr:nth-child(even){
+  background-color: #eee;
+}
+
+#t01 tr:nth-child(odd){
+  background-color: #fff;
+}
+
+#t01 th {
+  background-color: black;
+  color: white;
+}
+
+button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.list-playlist{
+  border-color: #282c34;
+  border-width: 2px;
+  border-style: solid;
+  padding : 10px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.container-grid-list{
+  display: grid;
+  grid-template-columns: [first] 165px [line2] auto [line3];
+  column-gap: 10px;
+}
+
+.grid-list-img{
+  grid-column-start: 1;
+  grid-column-end: 2;  
+}
+
+.grid-list-desc{
+  grid-column-start: 2;
+  grid-column-end: 3;  
+}
+
+.container-song-select{
+  border-color: #282c34;
+  border-width: 2px;
+  border-style: solid;
+  padding : 10px;
+  border-radius: 10px;
+  background-color: rgba(54, 247, 54, 0.5);
+}

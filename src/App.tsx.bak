@@ -1,0 +1,18 @@
+import './index.css';
+import './App.css';
+import { Provider } from 'react-redux';
+// import { Store } from 'redux';
+// import App from './App';
+import reportWebVitals from './reportWebVitals';
+import AppRouter from './router/AppRouter'
+import store from './store';
+
+const App = () => {
+    return(
+        // <Provider store={store}>
+            <AppRouter />
+        // </Provider>
+    );
+}
+
+export default App
