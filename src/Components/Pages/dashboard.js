@@ -170,7 +170,6 @@ const Dashboard = (props) => {
               {selectTracks.length > 0 && (<div className="container-song-select" style={{width: '100%', display: "flex", flexDirection: "row", alignItems: 'center', justifyContent:"space-between"}}>
                 {`${countSelect} song selected`}
                 <div>
-                    <Button variant="contained" color="primary" style={{marginRight: 10}}>Add To Playlist</Button>
                     <Button onClick={openModalCreate} variant="contained" color="primary" style={{marginRight: 10}}>Create New Playlist</Button>
                 </div>
               </div>)}
